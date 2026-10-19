@@ -57,7 +57,7 @@ inquiryForm?.addEventListener("submit", (event) => {
 
   const formData = new FormData(inquiryForm);
   const message = [
-    "Hallo DK-Race,",
+    "Hallo DK-Reifenservice,",
     "",
     `ich interessiere mich für: ${formData.get("service")}`,
     `Fahrzeug: ${formData.get("vehicle")}`,
