@@ -1,7 +1,20 @@
-# DK-Race – Website-Entwurf
+# DK-Race – Website
 
-Statischer, responsiver Website-Entwurf für DK-Race. Die Seite verwendet nur HTML, CSS und
-JavaScript und kann direkt über GitHub Pages veröffentlicht werden.
+Schlanke, statische Startseite für DK-Race / DK-Reifenservice in Gifhorn. Reines HTML, CSS und
+ca. 40 Zeilen JavaScript – kein Build, keine externen Ressourcen (keine Google Fonts, kein Tracking,
+keine eingebettete Karte), keine Cookies.
+
+## Dateien
+
+| Datei | Inhalt |
+| --- | --- |
+| `index.html` | Startseite: Hero, Leistungen, Werkstatt, Referenzen, Kontakt |
+| `impressum.html`, `datenschutz.html` | Rechtliche Seiten |
+| `styles.css` | Komplettes Styling, mobile Ansicht ab 320 px |
+| `script.js` | Mobilmenü, „Jetzt geöffnet“-Anzeige, Copyright-Jahr. Öffnungszeiten stehen in `HOURS`. |
+
+Nicht mehr verwendet (können gelöscht werden): `assets/images/dk-reifenservice-logo-transparent.png`,
+`hero-wheel.svg`, `kw-sales-service-point.png`, `vehicle-parts.png`, `workshop-exterior.png` (ersetzt durch `.jpg`).
 
 ## Lokal ansehen
 
@@ -9,15 +22,13 @@ JavaScript und kann direkt über GitHub Pages veröffentlicht werden.
 python3 -m http.server 8000
 ```
 
-Danach `http://localhost:8000` im Browser öffnen.
+## Vor dem Livegang offen
 
-## GitHub Pages veröffentlichen
-
-In den Repository-Einstellungen unter **Pages** als Quelle **Deploy from a branch** auswählen
-und den Branch `main` mit dem Ordner `/ (root)` festlegen. Es ist kein Build-Schritt nötig.
-
-## Vor der Veröffentlichung
-
-Die im Entwurf gekennzeichneten Angaben – insbesondere Markenname, Telefon- und
-WhatsApp-Nummer, Öffnungszeiten, Leistungsumfang sowie Rechtstexte – müssen bestätigt und die
-verwendeten Bildrechte geprüft werden. Details stehen in [Requirements.md](Requirements.md).
+- **Telefonnummer:** 05371 9373000 laut aktueller Startseite; 9399039/-040 aus dem alten Impressum sind veraltet. Fax entfällt bis zur Bestätigung.
+- **Fotos:** Hero-Foto (`workshop-exterior.jpg`) ist nur 508 px breit → hochauflösendes Original einsetzen.
+  Platzhalter (`.ph`) für Reifenmontage, Fahrwerk, Toni in der Werkstatt und drei Galerie-Bilder ersetzen.
+- **Facebook-/YouTube-URLs** im Footer (`[FACEBOOK-URL]`, `[YOUTUBE-URL]`).
+- **Leistungen** Gebrauchtteile, Mopeds & Quads – noch aktuell?
+- **Impressum:** Steuernummer vs. USt-IdNr. klären. **Datenschutz:** Text vervollständigen.
+- **Schrift (optional):** `Instrument Serif` als `assets/fonts/instrument-serif-400.woff2` ablegen und per
+  `@font-face` in `styles.css` einbinden; ohne Datei greift die Systemserifenschrift.

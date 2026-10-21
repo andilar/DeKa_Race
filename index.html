@@ -1,415 +1,222 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Erster Website-Entwurf für DK-Reifenservice – Reifen, Fahrwerke und Fahrzeugservice in Gifhorn."
-    />
-    <meta name="theme-color" content="#090e12" />
-    <meta property="og:title" content="DK-Reifenservice | Reifen & Fahrwerk in Gifhorn" />
-    <meta
-      property="og:description"
-      content="Persönlicher Reifen- und Fahrzeugservice in Gifhorn."
-    />
-    <meta property="og:type" content="website" />
-    <title>DK-Reifenservice | Reifen & Fahrwerk in Gifhorn</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DK-Race | Reifen, Felgen &amp; Fahrwerke in Gifhorn</title>
+  <meta name="description" content="DK-Race / DK-Reifenservice in Gifhorn: Reifenservice, Felgen und Felgenveredelung, Fahrwerke und Luftfahrwerke. Persönliche Beratung bei Antonio Kampourakis.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DK-Race – Reifen, Felgen &amp; Fahrwerke in Gifhorn">
+  <meta property="og:description" content="Persönlich beraten, sauber umgesetzt – vom Saisonwechsel bis zum Luftfahrwerk.">
+  <meta property="og:image" content="assets/images/workshop-exterior.jpg">
+  <meta name="theme-color" content="#111316">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "DK-Reifenservice / DK-Race",
+    "founder": "Antonio Kampourakis",
+    "image": "assets/images/workshop-exterior.jpg",
+    "telephone": "+49 5371 9373000",
+    "email": "info@dkreifenservice.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Braunschweiger Straße 110b",
+      "postalCode": "38518",
+      "addressLocality": "Gifhorn",
+      "addressCountry": "DE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "12:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "14:30", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "14:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
-    <header class="site-header" data-header>
-      <div class="shell header-inner">
-        <a class="brand" href="#top" aria-label="DK-Reifenservice Startseite">
-          <img
-            class="brand-logo"
-            src="assets/images/dk-reifenservice-logo-transparent.png"
-            alt="DK-Reifenservice"
-            width="720"
-            height="100"
-          />
-        </a>
+  <section class="hero" id="top">
+    <img class="hero__bg" src="assets/images/workshop-exterior.jpg" alt="" width="508" height="381" fetchpriority="high">
 
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="main-navigation"
-          data-menu-toggle
-        >
-          <span class="sr-only">Menü öffnen</span>
-          <span></span><span></span><span></span>
-        </button>
-
-        <nav class="main-nav" id="main-navigation" aria-label="Hauptnavigation" data-navigation>
-          <a href="#leistungen">Leistungen</a>
-          <a href="#werkstatt">Werkstatt</a>
-          <a href="#referenzen">Referenzen</a>
-          <a href="#standort">Standort</a>
-          <a class="button button-small" href="#kontakt">Anfrage starten</a>
-        </nav>
-      </div>
+    <header class="header wrap">
+      <a class="wordmark" href="#top" aria-label="DK-Race – Startseite">DK-RACE</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" data-menu-toggle>
+        <span class="sr-only">Menü</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="nav" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#dropitbox">Drop it Box</a>
+        <a href="#referenzen">Referenzen</a>
+        <a href="#werkstatt">Über uns</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <a class="btn btn--ghost btn--sm header__cta" href="https://wa.me/491714721130">Termin anfragen <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
     </header>
 
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-grid" aria-hidden="true"></div>
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="shell hero-inner">
-          <div class="hero-copy reveal">
-            <img
-              class="hero-brand-logo"
-              src="assets/images/dk-reifenservice-logo-transparent.png"
-              alt="DK-Reifenservice"
-              width="720"
-              height="100"
-            />
-            <h1>Mehr Grip.<br /><em>Mehr Gefühl.</em></h1>
-            <p class="hero-lead">
-              Reifen, Felgen und Fahrwerke – persönliche Beratung und saubere Arbeit für dein Fahrzeug.
-            </p>
-            <div class="hero-actions">
-              <a class="button" href="#kontakt">
-                Angebot anfragen
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M5 12h14M13 6l6 6-6 6" />
-                </svg>
-              </a>
-              <a class="text-link" href="#standort">
-                <svg aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
-                  <circle cx="12" cy="10" r="2.5" />
-                </svg>
-                Anfahrt ansehen
-              </a>
-            </div>
-          </div>
+    <div class="hero__body wrap">
+      <div class="hero__text">
+        <p class="eyebrow">Reifen · Felgen · Fahrwerk</p>
+        <h1>Mehr Grip.<br>Mehr Gefühl.</h1>
+        <p class="lead">Deine Werkstatt für Reifen, Felgen und Fahrwerke in Gifhorn. Persönlich beraten, sauber umgesetzt – vom Saisonwechsel bis zum Luftfahrwerk.</p>
+        <div class="actions">
+          <a class="btn btn--solid" href="https://wa.me/491714721130">Per WhatsApp anfragen <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost" href="tel:+4953719373000">Jetzt anrufen</a>
+        </div>
+      </div>
 
-          <div class="hero-visual reveal reveal-delay">
-            <div class="wheel-stage" aria-hidden="true">
-              <span class="wheel-shadow"></span>
-              <img src="assets/images/hero-wheel.svg" alt="" width="680" height="680" />
+      <aside class="glance" aria-label="Auf einen Blick">
+        <p class="eyebrow">DK-Race Gifhorn</p>
+        <div class="glance__row">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><strong>Mo – Fr</strong><span>10–12:30 · 14:30–18:30</span><span class="open-state" data-open-state></span></div>
+        </div>
+        <div class="glance__row">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+          <div><a href="tel:+4953719373000"><strong>05371 9373000</strong></a><span>Telefon</span></div>
+        </div>
+        <div class="glance__row">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <div><strong>Braunschweiger Str. 110b</strong><span>38518 Gifhorn</span></div>
+        </div>
+        <hr>
+        <a class="link-arrow" href="https://www.openstreetmap.org/search?query=Braunschweiger%20Stra%C3%9Fe%20110b%2C%2038518%20Gifhorn" target="_blank" rel="noopener noreferrer">Route planen <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      </aside>
+    </div>
+  </section>
+
+  <main id="inhalt">
+    <section class="light" id="leistungen" aria-labelledby="leistungen-titel">
+      <div class="wrap split">
+        <div class="split__intro">
+          <p class="eyebrow">Unsere Leistungen</p>
+          <h2 id="leistungen-titel">Das passende Setup für dein Fahrzeug.</h2>
+          <p class="muted">Rad, Reifen und Fahrwerk müssen zusammenpassen. Wir stimmen alles aufeinander ab – für Alltag, Optik oder Projekt.</p>
+          <p class="small muted">Außerdem: Umbauten &amp; Projekte · Gebrauchtteile · Mopeds &amp; Quads</p>
+          <a class="link-arrow" href="#kontakt">Anfrage stellen <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="ph ph--card">[Foto: Reifenmontage an der Maschine]</div>
+            <div class="card__body">
+              <h3>Reifenservice</h3>
+              <p>Montage, Wechsel und Beratung zur passenden Bereifung. Montagepreise auf Anfrage.</p>
+              <div class="card__meta"><span>Montage | Wuchten | Wechsel</span><a href="https://wa.me/491714721130" aria-label="Reifenservice anfragen"><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></div>
             </div>
+          </article>
+          <article class="card">
+            <img src="assets/images/felge-veredelung.jpg" alt="Mehrteilige Felge mit goldenem Stern und poliertem Felgenbett an einer Limousine" width="640" height="480" loading="lazy">
+            <div class="card__body">
+              <h3>Felgen &amp; Veredelung</h3>
+              <p>Auswahl, Montage und Felgenveredelung – passend zu deinem Fahrzeug.</p>
+              <div class="card__meta"><span>Auswahl | Veredelung</span><a href="https://wa.me/491714721130" aria-label="Felgen anfragen"><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="ph ph--card">[Foto: Fahrzeug tief auf der Bühne]</div>
+            <div class="card__body">
+              <h3>Fahrwerke &amp; Luftfahrwerke</h3>
+              <p>Gewinde- und Luftfahrwerke, eingebaut und abgestimmt.</p>
+              <div class="card__meta"><span>Gewinde | Luft | Setup</span><a href="https://wa.me/491714721130" aria-label="Fahrwerk anfragen"><svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="drop" id="dropitbox" aria-labelledby="drop-titel">
+      <div class="drop__media">
+        <img class="drop__car" src="assets/images/dropitbox-audi.jpg" alt="Schwarze Limousine mit Luftfahrwerk, im Stand komplett abgesenkt, vor der Werkstatt" width="924" height="298" loading="lazy">
+        <img class="drop__box" src="assets/images/dropitbox.jpg" alt="Drop it Box: Steuergerät mit DK-Race-Gravur und Funkfernbedienung" width="295" height="292" loading="lazy">
+      </div>
+      <div class="drop__text">
+        <p class="eyebrow">Spezialangebot · Drop it Box</p>
+        <h2 id="drop-titel">Im Stand ganz unten.</h2>
+        <p class="muted">Für alle Serien-Luftfahrwerke: Die Drop it Box lässt im Stand die Luft aus den Bälgen – per Funkfernbedienung stufenlos, bis das Fahrzeug auf dem Begrenzer aufliegt.</p>
+        <p class="small">Zum Beispiel für Audi, Porsche, VW, Mercedes, Bentley, BMW, Citroën, Jeep, Land Rover, Lexus, Maybach, Rolls-Royce, Tesla u. v. m.</p>
+        <div class="actions">
+          <a class="btn btn--solid" href="https://wa.me/491714721130">Drop it Box anfragen <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="werkstatt" aria-labelledby="werkstatt-titel">
+      <div class="ph about__img">[Foto: Toni in der Werkstatt, am Fahrzeug auf der Bühne]</div>
+      <div class="about__body">
+        <div class="about__text">
+          <p class="eyebrow">Die Werkstatt</p>
+          <h2 id="werkstatt-titel">Nicht irgendeine Lösung. Deine Lösung.</h2>
+          <p class="muted">Bei uns sprichst du direkt mit dem Menschen, der an deinem Fahrzeug schraubt. Kein Callcenter, keine Warteschleife – ehrliche Beratung und saubere Arbeit.</p>
+          <p class="small">Antonio „Toni“ Kampourakis <span class="muted">· Inhaber</span></p>
+        </div>
+        <ul class="features">
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20l1.3-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg><div><h3>Persönliche Beratung</h3><p>Wir hören zu, bevor wir schrauben.</p></div></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><div><h3>Ein Ansprechpartner</h3><p>Von der Anfrage bis zur Abholung.</p></div></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg><div><h3>Rad bis Fahrwerk</h3><p>Alles aus einer Hand abgestimmt.</p></div></li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><h3>Vor Ort in Gifhorn</h3><p>Kurzer Weg, schneller Termin.</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="light" id="referenzen" aria-labelledby="referenzen-titel">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Aus der Werkstatt</p>
+            <h2 id="referenzen-titel">Arbeit, die man sieht.</h2>
           </div>
         </div>
-      </section>
-
-      <section class="section services" id="leistungen">
-        <div class="shell">
-          <div class="section-heading reveal">
-            <div>
-              <p class="eyebrow"><span></span> Was wir machen</p>
-              <h2>Service, der dein Fahrzeug <em>weiterbringt.</em></h2>
-            </div>
-            <p>
-              Von der saisonalen Reifenmontage bis zum individuellen Fahrwerksprojekt – direkt,
-              fachgerecht und mit Blick fürs Detail.
-            </p>
-          </div>
-
-          <div class="service-grid">
-            <article class="service-card service-card-featured reveal">
-              <span class="card-index">01</span>
-              <svg class="card-icon" aria-hidden="true" viewBox="0 0 64 64">
-                <circle cx="32" cy="32" r="22" />
-                <circle cx="32" cy="32" r="10" />
-                <path d="M32 10v12M32 42v12M10 32h12M42 32h12M16.5 16.5l8.5 8.5M39 39l8.5 8.5M47.5 16.5 39 25M25 39l-8.5 8.5" />
-              </svg>
-              <div>
-                <h3>Reifenservice</h3>
-                <p>Montage, Wechsel und Beratung für die passende Bereifung deines Fahrzeugs.</p>
-              </div>
-              <a href="#kontakt" aria-label="Reifenservice anfragen">Service anfragen <span>↗</span></a>
-            </article>
-
-            <article class="service-card reveal">
-              <span class="card-index">02</span>
-              <svg class="card-icon" aria-hidden="true" viewBox="0 0 64 64">
-                <path d="M18 8h28l8 24-8 24H18L10 32 18 8Z" />
-                <circle cx="32" cy="32" r="12" />
-                <circle cx="32" cy="32" r="3" />
-              </svg>
-              <div>
-                <h3>Felgen</h3>
-                <p>Auswahl, Beratung und Veredelung für einen Auftritt, der zu dir passt.</p>
-              </div>
-              <a href="#kontakt" aria-label="Felgen anfragen">Service anfragen <span>↗</span></a>
-            </article>
-
-            <article class="service-card reveal">
-              <span class="card-index">03</span>
-              <svg class="card-icon" aria-hidden="true" viewBox="0 0 64 64">
-                <path d="M20 5v12l8 7-16 16 8 8 16-16 7 8h16M44 59V47l-8-7" />
-              </svg>
-              <div>
-                <h3>Fahrwerke</h3>
-                <p>Fahrwerke und Luftfahrwerke für Optik, Komfort und kontrolliertes Handling.</p>
-              </div>
-              <a href="#kontakt" aria-label="Fahrwerk anfragen">Service anfragen <span>↗</span></a>
-            </article>
-
-            <article class="service-card reveal">
-              <span class="card-index">04</span>
-              <svg class="card-icon" aria-hidden="true" viewBox="0 0 64 64">
-                <path d="m38 10 16 16-28 28H10V38L38 10Z" />
-                <path d="m31 17 16 16M16 40l8 8" />
-              </svg>
-              <div>
-                <h3>Teile & Umbauten</h3>
-                <p>Verschleißteile und individuelle Projekte mit persönlicher Abstimmung.</p>
-              </div>
-              <a href="#kontakt" aria-label="Umbau anfragen">Projekt anfragen <span>↗</span></a>
-            </article>
-          </div>
-          <p class="content-status">Leistungsumfang vor Veröffentlichung mit dem Betrieb abstimmen.</p>
+        <div class="gallery">
+          <figure><div class="ph ph--tall">[Foto: Kundenfahrzeug mit Luftfahrwerk, seitlich]</div><figcaption><span>Kundenfahrzeuge</span><span class="muted">Umbauten · Felgen</span></figcaption></figure>
+          <figure><div class="ph ph--tall">[Foto: Projektfahrzeug in der Werkstatt]</div><figcaption><span>Tonis Projekte</span><span class="muted">Eigene Umbauten</span></figcaption></figure>
+          <figure><div class="ph ph--tall">[Foto: Treffen vor der Werkstatt]</div><figcaption><span>Events &amp; Treffen</span><span class="muted">Community</span></figcaption></figure>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section workshop" id="werkstatt">
-        <div class="shell workshop-grid">
-          <div class="workshop-image reveal">
-            <img
-              src="assets/images/workshop-exterior.png"
-              alt="Außenansicht der DK-Race Werkstatt in Gifhorn"
-              width="508"
-              height="381"
-              loading="lazy"
-            />
-            <div class="image-label"><span>Seit 2011</span><small>Jahresangabe bestätigen</small></div>
-          </div>
-
-          <div class="workshop-copy reveal">
-            <p class="eyebrow"><span></span> Die Werkstatt</p>
-            <h2>Nicht irgendeine Lösung. <em>Deine Lösung.</em></h2>
-            <p class="large-copy">
-              Wir verbinden Erfahrung, Begeisterung und ehrliche Beratung – für Fahrzeuge, die nicht
-              von der Stange sein müssen.
-            </p>
-            <p>
-              Bei uns sprichst du direkt mit Menschen, die verstehen, worauf es bei Reifen, Felgen und
-              Fahrwerk ankommt. Gemeinsam finden wir eine Lösung, die zu deinem Fahrzeug und deinem
-              Anspruch passt.
-            </p>
-            <ul class="check-list">
-              <li><span>✓</span> Persönliche Beratung</li>
-              <li><span>✓</span> Direkter Ansprechpartner</li>
-              <li><span>✓</span> Werkstatt vor Ort in Gifhorn</li>
-            </ul>
-            <a class="text-link" href="#kontakt">Projekt besprechen <span>→</span></a>
+    <section class="contact" id="kontakt" aria-labelledby="kontakt-titel">
+      <div class="wrap split split--center">
+        <div class="contact__text">
+          <p class="eyebrow">Kontakt</p>
+          <h2 id="kontakt-titel">Was können wir für dich bewegen?</h2>
+          <p class="muted">Schick uns Fahrzeug, Wunsch und gern ein Foto per WhatsApp – wir melden uns mit Angebot und Terminvorschlag.</p>
+          <div class="actions">
+            <a class="btn btn--solid" href="https://wa.me/491714721130">WhatsApp 0171 4721130</a>
+            <a class="btn btn--ghost" href="tel:+4953719373000">05371 9373000</a>
           </div>
         </div>
-      </section>
-
-      <section class="section specialization" aria-labelledby="specialization-title">
-        <div class="shell specialization-grid">
-          <div class="specialization-copy reveal">
-            <p class="eyebrow"><span></span> Fahrwerk & Setup</p>
-            <h2 id="specialization-title">Tief ist einfach.<br /><em>Stimmig ist besser.</em></h2>
-            <p>
-              Fahrwerk, Rad und Reifen müssen als Einheit funktionieren. Wir stimmen dein Projekt
-              auf Fahrzeug, Optik und gewünschten Fahrkomfort ab.
-            </p>
-            <small>KW-Partnerschaft und Logonutzung vor Veröffentlichung bestätigen.</small>
-          </div>
-          <figure class="specialization-visual reveal reveal-delay">
-            <img
-              src="assets/images/kw-sales-service-point.png"
-              alt="KW Sales- & Service-Point"
-              width="969"
-              height="524"
-              loading="lazy"
-            />
-          </figure>
-        </div>
-      </section>
-
-      <section class="section references" id="referenzen">
-        <div class="shell">
-          <div class="section-heading compact reveal">
-            <div>
-              <p class="eyebrow"><span></span> Aus der Werkstatt</p>
-              <h2>Arbeit, die man <em>sieht.</em></h2>
-            </div>
-            <p>Hier entsteht Raum für echte Kundenfahrzeuge, Umbauten und aktuelle Projekte.</p>
-          </div>
-
-          <div class="reference-grid">
-            <article class="reference-card reference-card-photo reveal">
-              <img
-                src="assets/images/vehicle-parts.png"
-                alt="Auswahl verschiedener Fahrzeug- und Verschleißteile"
-                width="403"
-                height="244"
-                loading="lazy"
-              />
-              <div><span>Service</span><h3>Teile & Technik</h3></div>
-            </article>
-            <article class="reference-card reference-placeholder reveal">
-              <span class="placeholder-line"></span>
-              <p>Projektfoto gesucht</p>
-              <small>Kundenfahrzeug / Fahrwerk</small>
-            </article>
-            <article class="reference-card reference-placeholder alt reveal">
-              <span class="placeholder-line"></span>
-              <p>Projektfoto gesucht</p>
-              <small>Felgen / Veredelung</small>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section process" aria-labelledby="process-title">
-        <div class="shell">
-          <div class="process-header reveal">
-            <p class="eyebrow"><span></span> Einfach anfragen</p>
-            <h2 id="process-title">In drei Schritten zum <em>Termin.</em></h2>
-          </div>
-          <ol class="process-list">
-            <li class="reveal">
-              <span>01</span>
-              <div><h3>Anliegen senden</h3><p>Erzähl uns kurz, was du für dein Fahrzeug suchst.</p></div>
-            </li>
-            <li class="reveal">
-              <span>02</span>
-              <div><h3>Details klären</h3><p>Wir stimmen Teile, Umfang und den passenden Termin mit dir ab.</p></div>
-            </li>
-            <li class="reveal">
-              <span>03</span>
-              <div><h3>Vorbeikommen</h3><p>Du bringst dein Fahrzeug zum vereinbarten Termin zu uns.</p></div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section location" id="standort">
-        <div class="shell location-grid">
-          <div class="location-copy reveal">
-            <p class="eyebrow"><span></span> Vor Ort in Gifhorn</p>
-            <h2>Kurzer Weg.<br /><em>Direkter Kontakt.</em></h2>
-            <address>
-              <span>DK-Reifenservice</span>
-              Braunschweigerstraße 110B<br />
-              38518 Gifhorn
-            </address>
-            <a
-              class="button button-outline"
-              href="https://www.openstreetmap.org/search?query=Braunschweigerstra%C3%9Fe%20110B%2C%2038518%20Gifhorn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Route planen
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-            </a>
-          </div>
-
-          <div class="hours-card reveal">
-            <div class="hours-top">
-              <div><span class="status-dot"></span><strong>Öffnungszeiten</strong></div>
-              <small>bitte bestätigen</small>
-            </div>
-            <dl>
-              <div><dt>Montag – Freitag</dt><dd>10:00 – 12:30<br />14:30 – 18:30</dd></div>
-              <div><dt>Samstag</dt><dd>12:00 – 14:00</dd></div>
-              <div><dt>Sonntag</dt><dd>Geschlossen</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
-      <section class="section contact" id="kontakt">
-        <div class="shell contact-grid">
-          <div class="contact-intro reveal">
-            <p class="eyebrow"><span></span> Jetzt anfragen</p>
-            <h2>Was können wir für dich <em>bewegen?</em></h2>
-            <p>
-              Erstelle eine kurze Anfrage. Deine Eingaben bleiben auf diesem Gerät und werden nicht
-              automatisch versendet.
-            </p>
-            <div class="contact-options">
-              <div>
-                <span>Telefon</span>
-                <strong>05371 9373000</strong>
-                <small>Nummer vor Veröffentlichung bestätigen</small>
-              </div>
-              <div>
-                <span>WhatsApp</span>
-                <strong>0171 4721130</strong>
-                <small>Nummer vor Veröffentlichung bestätigen</small>
-              </div>
-            </div>
-          </div>
-
-          <form class="inquiry-form reveal" data-inquiry-form>
-            <div class="field-row">
-              <label>
-                <span>Name</span>
-                <input type="text" name="name" autocomplete="name" placeholder="Dein Name" required />
-              </label>
-              <label>
-                <span>Fahrzeug</span>
-                <input type="text" name="vehicle" placeholder="z. B. Golf 7 GTI" required />
-              </label>
-            </div>
-            <label>
-              <span>Worum geht es?</span>
-              <select name="service" required>
-                <option value="">Bitte auswählen</option>
-                <option>Reifenservice</option>
-                <option>Felgen</option>
-                <option>Fahrwerk / Luftfahrwerk</option>
-                <option>Teile / Umbau</option>
-                <option>Sonstiges</option>
-              </select>
-            </label>
-            <label>
-              <span>Deine Nachricht <small>(optional)</small></span>
-              <textarea name="message" rows="4" placeholder="Erzähl uns kurz mehr über dein Anliegen …"></textarea>
-            </label>
-            <button class="button form-submit" type="submit">
-              Anfragetext erstellen
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
-            </button>
-            <p class="form-hint">Kein Upload, kein Versand, keine Speicherung – passend für GitHub Pages.</p>
-            <div class="form-result" hidden data-form-result tabindex="-1">
-              <strong>Dein Anfragetext ist bereit.</strong>
-              <pre data-inquiry-text></pre>
-              <button class="copy-button" type="button" data-copy-button>Text kopieren</button>
-              <p aria-live="polite" data-copy-status></p>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="shell footer-main">
         <div>
-          <a class="brand brand-footer" href="#top" aria-label="DK-Reifenservice Startseite">
-            <img
-              class="brand-logo"
-              src="assets/images/dk-reifenservice-logo-transparent.png"
-              alt="DK-Reifenservice"
-              width="720"
-              height="100"
-              loading="lazy"
-            />
-          </a>
-          <p>Reifen. Fahrwerk. Leidenschaft.<br />In Gifhorn.</p>
-        </div>
-        <div class="footer-links">
-          <div><strong>Navigation</strong><a href="#leistungen">Leistungen</a><a href="#werkstatt">Werkstatt</a><a href="#referenzen">Referenzen</a></div>
-          <div><strong>Kontakt</strong><a href="#standort">Anfahrt</a><a href="#kontakt">Anfrage</a><span>Social Links folgen</span></div>
-          <div><strong>Rechtliches</strong><span>Impressum folgt</span><span>Datenschutz folgt</span></div>
+          <table class="hours">
+            <caption class="eyebrow">Öffnungszeiten</caption>
+            <tbody>
+              <tr><th scope="row">Montag – Freitag</th><td>10:00–12:30 · 14:30–18:30</td></tr>
+              <tr><th scope="row">Samstag</th><td>12:00–14:00</td></tr>
+              <tr><th scope="row">Sonntag</th><td>geschlossen</td></tr>
+            </tbody>
+          </table>
+          <p class="small muted">E-Mail: <a href="mailto:info@dkreifenservice.de">info@dkreifenservice.de</a></p>
         </div>
       </div>
-      <div class="shell footer-bottom">
-        <span>© <span data-current-year></span> DK-Reifenservice · Entwurf</span>
-        <span>Made for the road.</span>
-      </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span><span class="wordmark wordmark--sm">DK-RACE</span> · Braunschweiger Straße 110b, 38518 Gifhorn · © <span data-year>2026</span></span>
+      <nav aria-label="Rechtliches und Social Media">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="[FACEBOOK-URL]" rel="noopener noreferrer">Facebook</a>
+        <a href="[YOUTUBE-URL]" rel="noopener noreferrer">YouTube</a>
+      </nav>
+    </div>
+  </footer>
+
+  <a class="sticky-cta btn btn--solid" href="https://wa.me/491714721130">Per WhatsApp anfragen</a>
+</body>
 </html>
