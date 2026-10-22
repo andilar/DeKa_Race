@@ -24,7 +24,7 @@ python3 -m http.server 8000
 
 ## Vor dem Livegang offen
 
-- **Telefonnummer:** 05371 9373000 laut aktueller Startseite; 9399039/-040 aus dem alten Impressum sind veraltet. Fax entfällt bis zur Bestätigung.
+- **Telefonnummer:** 
 - **Fotos:** Hero-Foto (`workshop-exterior.jpg`) ist nur 508 px breit → hochauflösendes Original einsetzen.
   Platzhalter (`.ph`) für Reifenmontage, Fahrwerk, Toni in der Werkstatt und drei Galerie-Bilder ersetzen.
 - **Facebook-/YouTube-URLs** im Footer (`[FACEBOOK-URL]`, `[YOUTUBE-URL]`).
